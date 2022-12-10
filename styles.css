@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+.hero-section {
+  background: linear-gradient(
+    90deg,
+    hsla(211, 78%, 60%, 1) 0%,
+    hsla(217, 87%, 30%, 1) 100%
+  );
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.global-header {
+  width: 100%;
+  padding: 32px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.mw {
+  width: 90vw;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.hero-content {
+  padding: 0 32px;
+  display: grid;
+  align-content: center;
+  height: calc(100vh - 121px - 500px);
+  min-height: 263px;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  line-height: 88px;
+  margin-bottom: 16px;
+  /* max-width: 800px; */
+}
+
+.hero-content p {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+.booking-container {
+  background: white;
+  /* width: 100%; */
+  border-radius: 16px;
+  /* position: absolute; */
+  /* bottom: -45%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  padding: 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.inputs-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 16px;
+  grid-gap: 32px;
+}
+
+.booking-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: 100%;
+}
+
+.booking-row > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.travelers-class-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-button {
+  background: #ffec41;
+  color: black;
+  box-shadow: 0 10px 20px #fff599;
+}
+
+.primary-button:hover {
+  background: #ffef60;
+}
+
+.primary-button:active {
+  box-shadow: 0 5px 10px #fff599;
+  transform: scale(0.95);
+}
+
+.input-container {
+  color: black;
+  display: grid;
+  gap: 16px;
+}
+
+.input-container label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+select {
+  min-width: 200px;
+  border: none;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.search-button-container {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-top: 56px;
+}
+
+.search-button-container > button {
+  min-width: 288px;
+}
+
+input[type="date"] {
+  min-width: 200px;
+  border: none;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.counters-wrapper {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(112, 112, 112);
+}
+
+.counter-container {
+  display: grid;
+  grid-gap: 8px;
+}
+
+.counter-container label {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.counter button {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 2px 10px;
+}
+
+.classes-container {
+  display: flex;
+  width: 100%;
+}
+
+.radio-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-container label {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.radio-container input[type="radio"] {
+  width: 16px;
+  cursor: pointer;
+  height: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .booking-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mw {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 16px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 500px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .booking-row {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .booking-row > div {
+    gap: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 500px;
+    font-weight: 500;
+  }
+
+  .hero-content {
+    padding: 0 32px;
+  }
+
+  select {
+    min-width: 40px;
+  }
+  input[type="date"] {
+    min-width: 40px;
+  }
+
+  .input-container {
+    color: black;
+    display: grid;
+    gap: 8px;
+  }
+
+  .travelers-class-container {
+    grid-template-columns: 1fr;
+  }
+
+  .global-header {
+    padding: 16px;
+  }
+
+  .booking-container {
+    padding: 16px 24px;
+  }
+  .inputs-wrapper {
+    margin-bottom: 16px;
+  }
+
+  .search-button-container {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .booking-container {
+    padding: 16px;
+  }
+}

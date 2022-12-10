@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyBanjara - Book cheapest flights</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!------------------------- HERO SECTION --------------------->
+      <section class="hero-section">
+        <!-- GLOBAL HEADER -->
+        <header class="global-header mw">
+          <div class="logo">Logo</div>
+          <div class="auth-buttons-container">
+            <button>Login</button>
+          </div>
+        </header>
+        <!-- HERO CONTENT -->
+        <div class="hero-content mw">
+          <h1>Book an adventure.</h1>
+          <p>
+            Find and book your perfect flight at the best price with Banjara and
+            enjoy rewards and benfits like no other.
+          </p>
+        </div>
+        <!-- BOOKING CONTAINER -->
+        <form class="booking-container mw">
+          <div class="inputs-wrapper">
+            <div class="booking-row">
+              <div>
+                <div class="input-container">
+                  <label for="">From</label>
+                  <select name="" id="">
+                    <option value="none" selected disabled hidden>
+                      Select city
+                    </option>
+                  </select>
+                </div>
+                <div class="input-container">
+                  <label for="">To</label>
+                  <select name="" id="">
+                    <option value="none" selected disabled hidden>
+                      Select city
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <div class="input-container">
+                  <label for="">Departure</label>
+                  <input type="date" name="" id="" />
+                </div>
+                <div class="input-container">
+                  <label for="">Arrival</label>
+                  <input type="date" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="travelers-class-container">
+              <div class="input-container">
+                <label for="">Number of travelers</label>
+                <div class="counters-wrapper">
+                  <div class="counter-container">
+                    <label for="">Adults</label>
+                    <div class="counter">
+                      <button>-</button>
+                      <p>0</p>
+                      <button>+</button>
+                    </div>
+                  </div>
+                  <div class="counter-container">
+                    <label for="">Children</label>
+                    <div class="counter">
+                      <button>-</button>
+                      <p>0</p>
+                      <button>+</button>
+                    </div>
+                  </div>
+                  <div class="counter-container">
+                    <label for="">Infants</label>
+                    <div class="counter">
+                      <button>-</button>
+                      <p>0</p>
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-container">
+                <label for="">Ticket Class</label>
+                <!-- <div class="classes-container">
+                  <div class="radio-container">
+                    <input type="radio" name="class" id="economy_class" />
+                    <label for="economy_class">Economy</label>
+                  </div>
+                  <div class="radio-container">
+                    <input
+                      type="radio"
+                      name="class"
+                      id="premium_economy_class"
+                    />
+                    <label for="premium_economy_class">Premium Economy</label>
+                  </div>
+                  <div class="radio-container">
+                    <input type="radio" name="class" id="business_class" />
+                    <label for="business_class">Business</label>
+                  </div>
+                </div> -->
+
+                <select name="" id="">
+                  <option value="none" selected disabled hidden>
+                    Select Ticket Class
+                  </option>
+                  <option value="economy">Economy Class</option>
+                  <option value="premium_economy">Premium Economy Class</option>
+                  <option value="business">Business Class</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="search-button-container">
+            <button class="primary-button">Search flights</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
