@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlyBanjara - Book cheapest flights</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- <script type="module" src="./script.js" defer></script> -->
+    <script type="module" src="./script.js" defer></script>
   </head>
   <body>
     <main>
@@ -28,21 +28,21 @@
           </p>
         </div>
         <!-- BOOKING CONTAINER -->
-        <form class="booking-container mw">
+        <form id="booking_form" class="booking-container mw">
           <div class="inputs-wrapper">
             <div class="booking-row">
               <div>
                 <div class="input-container">
-                  <label for="">From</label>
-                  <select name="" id="">
+                  <label for="from_city">From</label>
+                  <select name="from_city" id="from_city">
                     <option value="none" selected disabled hidden>
                       Select airport
                     </option>
                   </select>
                 </div>
                 <div class="input-container">
-                  <label for="">To</label>
-                  <select name="" id="">
+                  <label for="to_city">To</label>
+                  <select name="to_city" id="to_city">
                     <option value="none" selected disabled hidden>
                       Select airport
                     </option>
@@ -51,8 +51,8 @@
               </div>
               <div>
                 <div class="input-container">
-                  <label for="">Departure</label>
-                  <input type="date" name="" id="" />
+                  <label for="departure">Departure</label>
+                  <input type="date" name="departure" id="departure" />
                 </div>
               </div>
             </div>
@@ -63,51 +63,44 @@
                   <div class="counter-container">
                     <label for="">Adults</label>
                     <div class="counter">
-                      <button>-</button>
-                      <p>0</p>
-                      <button>+</button>
+                      <button name="adult_count_d" class="counterButton">
+                        -
+                      </button>
+                      <p id="adult_count">0</p>
+                      <button name="adult_count_i" class="counterButton">
+                        +
+                      </button>
                     </div>
                   </div>
                   <div class="counter-container">
                     <label for="">Children</label>
                     <div class="counter">
-                      <button>-</button>
-                      <p>0</p>
-                      <button>+</button>
+                      <button name="child_count_d" class="counterButton">
+                        -
+                      </button>
+                      <p id="child_count">0</p>
+                      <button name="child_count_i" class="counterButton">
+                        +
+                      </button>
                     </div>
                   </div>
                   <div class="counter-container">
                     <label for="">Infants</label>
                     <div class="counter">
-                      <button>-</button>
-                      <p>0</p>
-                      <button>+</button>
+                      <button name="infant_count_d" class="counterButton">
+                        -
+                      </button>
+                      <p id="infant_count">0</p>
+                      <button name="infant_count_i" class="counterButton">
+                        +
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="input-container">
-                <label for="">Ticket Class</label>
-                <!-- <div class="classes-container">
-                  <div class="radio-container">
-                    <input type="radio" name="class" id="economy_class" />
-                    <label for="economy_class">Economy</label>
-                  </div>
-                  <div class="radio-container">
-                    <input
-                      type="radio"
-                      name="class"
-                      id="premium_economy_class"
-                    />
-                    <label for="premium_economy_class">Premium Economy</label>
-                  </div>
-                  <div class="radio-container">
-                    <input type="radio" name="class" id="business_class" />
-                    <label for="business_class">Business</label>
-                  </div>
-                </div> -->
-
-                <select name="" id="">
+                <label for="ticket_class">Ticket Class</label>
+                <select name="ticket_class" id="ticket_class">
                   <option value="none" selected disabled hidden>
                     Select Ticket Class
                   </option>
@@ -119,10 +112,16 @@
             </div>
           </div>
           <div class="search-button-container">
-            <button class="primary-button">Search flights</button>
+            <button type="submit" id="submit_button" class="primary-button">
+              Search flights
+            </button>
           </div>
         </form>
       </section>
+      <section id="list_section" class="list-section mw">
+        <h2>Choose a flight</h2>
+        <div class="list-container">
+        </div>
     </main>
     <footer></footer>
   </body>

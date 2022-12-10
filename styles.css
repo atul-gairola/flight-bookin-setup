@@ -223,6 +223,97 @@ input[type="date"] {
   height: 16px;
 }
 
+.disable {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.list-section {
+  padding: 60px 0;
+}
+
+.list-container {
+  margin-top: 36px;
+  display: grid;
+  grid-gap: 24px;
+}
+
+.list-item {
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  padding: 16px 32px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.flight-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgb(112, 112, 112);
+  padding-right: 32px;
+}
+
+.flight-name > p:first-of-type {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.flight-name > p:last-of-type {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.detail-section {
+  display: flex;
+  gap: 16px;
+  padding-right: 32px;
+  align-items: start;
+  flex-grow: 1;
+}
+
+.list-item > div {
+  border-right: 1px solid rgb(112, 112, 112);
+}
+
+.list-item > div:last-of-type {
+  border-right: none;
+}
+
+.time {
+  font-size: 64px;
+  line-height: 62px;
+}
+
+.detail-section > div > label {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.detail-section > div > div {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.payment-container {
+  display: flex;
+  border-right: 0;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.price {
+  font-size: 48px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
 @media only screen and (max-width: 1100px) {
   .booking-row {
     grid-template-columns: 1fr;
