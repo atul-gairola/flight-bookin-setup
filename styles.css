@@ -95,6 +95,10 @@ input {
   gap: 32px;
 }
 
+.booking-row > div:last-of-type {
+  grid-template-columns: 1fr;
+}
+
 .travelers-class-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
